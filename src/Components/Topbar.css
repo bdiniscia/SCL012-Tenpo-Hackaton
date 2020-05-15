@@ -1,0 +1,17 @@
+.topbar {
+    height: 64px;
+    background-color: #00BAA4;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 40%;
+    width: 72px;
+}
+
+.squareMenu {
+    position: absolute;
+    right: 1em
+}
