@@ -1,5 +1,9 @@
 .topbar {
     height: 64px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
     background-color: #00BAA4;
     display: flex;
     align-items: center;
@@ -7,8 +11,9 @@
 
 .logo {
     position: absolute;
-    left: 40%;
+    left: 50%;
     width: 72px;
+    margin-left: -36px;
 }
 
 .squareMenu {
