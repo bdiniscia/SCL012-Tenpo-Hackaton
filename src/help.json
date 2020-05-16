@@ -2,125 +2,46 @@
     {
       "id": "s01",
       "title": "Tengo un problema",
-      "icon": "../img/",
-      "type": "breakfast"
+      "icon": "/img/problem.svg"
     },
     {
-      "id": "b02",
-      "name": "Café con leche",
-      "price": 700,
-      "type": "breakfast"
+        "id": "s02",
+        "title": "Soy nuevo en Tenpo",
+        "icon": "/img/newUsers.svg"
     },
     {
-      "id": "b03",
-      "name": "Sandwich jamón-queso",
-      "price": 1000,
-      "type": "breakfast"
+        "id": "s03",
+        "title": "Tarjeta Tenpo Mastercard",
+        "icon": "/img/cardHelp.svg"
     },
     {
-      "id": "b04",
-      "name": "Jugo de frutas natural",
-      "price": 700,
-      "type": "breakfast"
+        "id": "s04",
+        "title": "Cargar plata a Tenpo",
+        "icon": "/img/chargeMoney.svg"
     },
     {
-      "id": "d01",
-      "name": "Hamburguesa simple",
-      "price": 1000,
-      "type": "dinner",
-      "extras": [
-        {
-          "id": "e00",
-          "name": "Huevo",
-          "price": 100
-        }, 
-        {
-          "id": "e01",
-          "name": "Queso",
-          "price": 100
-        }
-      ],
-      "options": [
-        {
-          "id": "t00",
-          "name": "Pollo"
-        },
-        {
-          "id": "t01",
-          "name": "Carne"
-        },
-        {
-          "id": "t01",
-          "name": "Vegetariana"
-        }
-      ]
+        "id": "s05",
+        "title": "Retirar plata",
+        "icon": "/img/withdrawal.svg"
     },
     {
-      "id": "d02",
-      "name": "Hamburguesa doble",
-      "price": 1500,
-      "type": "dinner",
-      "extras": [
-        {
-          "id": "e00",
-          "name": "Huevo",
-          "price": 100
-        }, 
-        {
-          "id": "e01",
-          "name": "Queso",
-          "price": 100
-        }
-      ],
-      "options": [
-        {
-          "id": "t00",
-          "name": "Pollo"
-        },
-        {
-          "id": "t01",
-          "name": "Carne"
-        },
-        {
-          "id": "t01",
-          "name": "Vegetariana"
-        }
-      ]
+        "id": "s06",
+        "title": "Comprar y pagar suscripciones",
+        "icon": "/img/suscriptions.svg"
     },
     {
-      "id": "d03",
-      "name": "Papas fritas",
-      "price": 500,
-      "type": "dinner"
+        "id": "s07",
+        "title": "Cambiar y recuperar contraseña",
+        "icon": "/img/password.svg"
     },
     {
-      "id": "d04",
-      "name": "Aros de cebolla",
-      "price": 500,
-      "type": "dinner"
+        "id": "s08",
+        "title": "Comisiones",
+        "icon": "/img/commissions.svg"
     },
     {
-      "id": "d05",
-      "name": "Agua 500ml",
-      "price": 500,
-      "type": "dinner"
-    },
-    {
-      "id": "d06",
-      "name": "Agua 750ml",
-      "price": 700,
-      "type": "dinner"
-    },
-    {
-      "id": "d07",
-      "name": "Bebida/gaseosa 500ml",
-      "price": 700,
-      "type": "dinner"
-    },
-    {
-      "id": "d08",
-      "name": "Bebida/gaseosa 750ml",
-      "price": 1000,
-      "type": "dinner"
+        "id": "s09",
+        "title": "Bloqueo de tarjeta o pérdida del celular",
+        "icon": "/img/blockCard.svg"
     }
   ]
