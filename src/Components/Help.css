@@ -5,12 +5,6 @@
     margin-bottom: 70px;
 }
 
-/* .backgroundGreen {
-    background-color: #00BAA4;
-    height: 18em;
-    z-index: 0;
-} */
-
 .welcomeHelp {
     background-image: url('../img/backgroundHelp.png');
     width: 100%;
@@ -47,27 +41,4 @@
     width: 100%;
     margin-top: -1.8em;
     align-items: center;
-}
-
-.categoryHelp {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #dadada;
-    border-radius: 8px;
-    color: #595959;
-    padding: 1em;
-    font-size: 14px;
-    background-color: #fff;
-    width: 80%;
-    margin-bottom: 1em;
-}
-
-.contentCategory {
-    display: flex;
-    align-items: center;
-}
-
-.categoryText {
-    margin-left: 0.5em;
 }

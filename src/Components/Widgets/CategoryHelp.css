@@ -1,0 +1,27 @@
+.categoryHelp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    color: #595959;
+    padding: 1em;
+    font-size: 14px;
+    background-color: #fff;
+    width: 80%;
+    margin-bottom: 1em;
+}
+
+.contentCategory {
+    display: flex;
+    align-items: center;
+}
+
+.categoryText {
+    margin-left: 0.5em;
+}
+
+.iconCategory {
+    width: 2.5em;
+    height: 2.5em;
+}
