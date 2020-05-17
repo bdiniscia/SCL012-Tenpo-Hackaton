@@ -1,0 +1,80 @@
+.problems {
+    color: #333;
+    padding: 0 1em;
+}
+
+.goBack {
+    margin: 0.3em;
+    font-size: 11px;
+}
+
+.titleSectionProblems {
+    font-size: 20px;
+}
+
+.titleSection {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 1em;
+}
+
+
+.divProblem {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1em;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.problemQuestion {
+    font-size: 14px;
+    margin: 0.6em 0.5em 0.6em 0;
+}
+
+.listStep {
+    font-size: 13px;
+    margin-bottom: 0.4em;
+}
+
+.primaryText {
+    font-size: 14px;
+}
+
+ol {
+    list-style: none;
+    counter-reset: item;
+}
+
+li {
+    counter-increment: item;
+    margin-bottom: 5px;
+}
+
+li:before {
+    margin-right: 10px;
+    content: counter(item);
+    border-radius: 100%;
+    border: 1px solid #75E7D9;
+    color: #75E7D9;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: 2em;
+  }
+
+.usefulQuestion {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.feedbackButtons  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.feedback {
+    margin: 0 1em;
+    height: 4.2em;
+}

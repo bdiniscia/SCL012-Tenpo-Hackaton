@@ -1,10 +1,5 @@
 [
     {
-      "id": "s01",
-      "title": "Tengo un problema",
-      "icon": "/img/problem.svg"
-    },
-    {
         "id": "s02",
         "title": "Soy nuevo en Tenpo",
         "icon": "/img/newUsers.svg"
