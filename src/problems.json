@@ -9,25 +9,25 @@
               "Verifica si ingresaste correctamente el número de serie de tu cédula de identidad en tu app.",
               "Es posible que no hayas validado tu teléfono correctamente y ese paso es necesario para completar tu registro.",
               "Si aún no puedes registrarte, no te preocupes. Contáctanos en el siguiente formulario o llámanos al 600 360 0355."
-          ]
-      },
-      "transaction": false
+          ],
+          "transaction": false
+      }
     },
     {
         "id": "p02",
         "problem": "Hice una carga y mi saldo no se actualizó",
         "answer": {
-            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago pero el monto no llegó. Te recomendamos esperar 10 minutos ya que a veces los sistemas tienen un desfase pequeño por temas de conectividad. También prueba cerrar y volver a ingresar a la App.  Si aún persiste el problema no te preocupes, escríbenos en el siguiente formulario o llámanos al 600 360 0355 y te ayudaremos para que podamos validar tu caso en nuestro sistema."
-        },
-        "transaction": false
+            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago pero el monto no llegó. Te recomendamos esperar 10 minutos ya que a veces los sistemas tienen un desfase pequeño por temas de conectividad. También prueba cerrar y volver a ingresar a la App.  Si aún persiste el problema no te preocupes, escríbenos en el siguiente formulario o llámanos al 600 360 0355 y te ayudaremos para que podamos validar tu caso en nuestro sistema.",
+            "transaction": false
+        }
     },
     {
         "id": "p03",
         "problem": "¿Por qué mi retiro por transferencia demora 48 horas en llegar a mi cuenta?",
         "answer": {
-            "primary": "Al no ser un banco no contamos con herramientas para hacer transferencias inmediatas, en vez de ello, utilizamos herramientas de nóminas bancarias las cuáles tienen una demora de 48 horas hábiles. Pero la buena noticia es que estamos trabajando para acelerar los procesos de transferencias"
-        },
-        "transaction": true
+            "primary": "Al no ser un banco no contamos con herramientas para hacer transferencias inmediatas, en vez de ello, utilizamos herramientas de nóminas bancarias las cuáles tienen una demora de 48 horas hábiles. Pero la buena noticia es que estamos trabajando para acelerar los procesos de transferencias",
+            "transaction": true
+        }
     },
     {
         "id": "p04",
@@ -38,9 +38,9 @@
                 "Te recomendamos que tu saldo sea un poco más elevado que al pago que quieres realizar, algunos comercios cobran un pequeño monto para validar tarjeta Mastercard. Recuerda que esta acción puede suceder, pero en todos los casos te devuelven tu plata.",
                 "Asegúrate de escribir correctamente el número de tu tarjeta, fecha de vencimiento o código de verificación.",
                 "Existen sitios web que no aceptan Tarjetas de Prepago.  Conoce todos los sitios y comercios internacionales donde puedes comprar y pagar con la tarjeta Tenpo Mastercard en tenpo.cl"
-            ]    
-        },
-        "transaction": false
+            ],
+            "transaction": false
+        }
     },
     {
         "id": "p05",
@@ -50,33 +50,33 @@
             "steps": [
                 "Ingresa tu app Tenpo y bloquea tu tarjeta haciendo clic en \"Bloqueo temporal\". Esto evitará que se puedan realizar compras con tu cuenta, por lo tanto quedará protegida y no podrá ser víctima de fraudes.",
                 "Llámanos al 600 360 0355 y un ejecutivo te asistirá con prioridad para investigar el caso. También puedes dejarnos tu mensaje en el siguiente formulario. El horario de atención es de Lunes a Viernes 08:00 a 23.00 hrs. Sábado, Domingo y Festivos 09:00 a 23.00 hrs."
-            ] 
-        },
-        "transaction": true
+            ],
+            "transaction": true
+        }
     },
     {
         "id": "p06",
         "problem": "Aún no recibo mi recarga",
         "answer": {
-            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago, pero,  ¿el monto no llegó? por favor verifica en primer lugar si recargaste al número correcto. Si el número es correcto y existió una caída en el servicio, existe un plazo máximo de 72 hrs hábiles para que tu plata retorne hasta tu cuenta."
-        },
-        "transaction": false
+            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago, pero,  ¿el monto no llegó? por favor verifica en primer lugar si recargaste al número correcto. Si el número es correcto y existió una caída en el servicio, existe un plazo máximo de 72 hrs hábiles para que tu plata retorne hasta tu cuenta.",
+            "transaction": false
+        }
     },
     {
         "id": "p07",
         "problem": "Recibí un mensaje de error pero se descartó en mi cuenta",
         "answer": {
-            "primary": "En el caso que apareciera error en la transacción y que igualmente se descontara plata de tu cuenta, el operador tiene un plazo de 1 hora y máximo de 72 horas hábiles para su retorno."
-        },
-        "transaction": true
+            "primary": "En el caso que apareciera error en la transacción y que igualmente se descontara plata de tu cuenta, el operador tiene un plazo de 1 hora y máximo de 72 horas hábiles para su retorno.",
+            "transaction": true
+        }
     },
     {
         "id": "p08",
         "problem": "Esperé 72 horas y no llegó mi devolución",
         "answer": {
-            "primary": "Si tu recarga fue fallida, no recibiste tu monto y ya han pasado más de las 72 hrs hábiles, entonces por favor comunícate con nosotros a través de alguna de nuestras redes sociales o llámanos al 600 360 0355. Es importante saber que Tenpo no hace abonos, sino que anula la carga inicial."
-        },
-        "transaction": true
+            "primary": "Si tu recarga fue fallida, no recibiste tu monto y ya han pasado más de las 72 hrs hábiles, entonces por favor comunícate con nosotros a través de alguna de nuestras redes sociales o llámanos al 600 360 0355. Es importante saber que Tenpo no hace abonos, sino que anula la carga inicial.",
+            "transaction": true
+        }
     },
     {
         "id": "p09",
@@ -87,9 +87,9 @@
                 "Revisa que tienes saldo suficiente para cubrir la recarga.",
                 "Verifica que el número y la compañía estén correctos.",
                 "Puede que hayas superado el monto mensual de movimientos que permite Tenpo."
-            ]
-        },
-        "transaction": false
+            ],
+            "transaction": false
+        }
     },
     {
         "id": "p10",
@@ -99,24 +99,24 @@
             "steps": [
                 "Tus pagos puede fallar si es que el monto que trasfieres + el monto actual del usuario de destino es por sobre el límite máximo de una cuenta Tenpo ($500.000).",
                 "Tus cobros pueden fallar si aceptan tu cobro pero el monto pagado + el monto actual en tu cuenta Tenpo es mayor al límite máximo en tu cuenta Tenpo ($500.000)."
-            ]
-        },
-        "transaction": true
+            ],
+            "transaction": true
+        }
     },
     {
         "id": "p11",
         "problem": "Me robaron o perdí mi celular ¿Qué hago?",
         "answer": {
-            "primary": "Para proteger la seguridad de tus datos, llámanos al 600 360 0355 o escríbenos al siguiente formulario y un ejecutivo te asistirá con prioridad. El horario de atención es de Lunes a Viernes 08:00 a 23.00 hrs. Sábado, Domingo y Festivos 09:00 a 23.00 hrs.   "
-        },
-        "transaction": false
+            "primary": "Para proteger la seguridad de tus datos, llámanos al 600 360 0355 o escríbenos al siguiente formulario y un ejecutivo te asistirá con prioridad. El horario de atención es de Lunes a Viernes 08:00 a 23.00 hrs. Sábado, Domingo y Festivos 09:00 a 23.00 hrs.",
+            "transaction": false
+        }
     },
     {
         "id": "p12",
         "problem": "¿Tienes algún reclamo?",
         "answer": {
-            "primary": "Si necesitas reportar un reclamo, puedes llamarnos al 600 360 0355 o puedes enviarnos tu reclamo con el detalle del problema a través del siguiente formulario. El horario de atención del soporte telefónico es de Lunes a Viernes 08:00 a 23.00 hrs. Sábado, Domingo y Festivos 09:00 a 23.00 hrs. "
-        },
-        "transaction": true
+            "primary": "Si necesitas reportar un reclamo, puedes llamarnos al 600 360 0355 o puedes enviarnos tu reclamo con el detalle del problema a través del siguiente formulario. El horario de atención del soporte telefónico es de Lunes a Viernes 08:00 a 23.00 hrs. Sábado, Domingo y Festivos 09:00 a 23.00 hrs.",
+            "transaction": true
+        }
     }
   ]

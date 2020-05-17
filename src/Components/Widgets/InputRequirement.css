@@ -1,0 +1,27 @@
+.inputRequirement {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.question {
+    font-size: 15px;
+
+}
+
+.textareaRequirement {
+    resize: none;
+    height: 8em;
+    border: none;
+    border-radius: 8px;
+    padding: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divButton {
+    align-self: flex-end;
+    margin-right: -1.8em;
+}

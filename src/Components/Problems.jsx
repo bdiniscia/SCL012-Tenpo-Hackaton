@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import problems from '../problems.json'
 import './Problems.css'
 import Button from './Widgets/Button'
+import { Link } from "react-router-dom";
+import BackButton from './Widgets/BackButton';
 
 const Problems = ({goingBack}) => {
     const [showAnswer, setShowAnswer] = useState(false)
@@ -23,8 +25,8 @@ const Problems = ({goingBack}) => {
     return (
         <div className='problems'>
             { showAnswer ?
-            <div>
-                <span className='goBack' onClick={() => goingBacktoProblems()}>&lt; Volver</span>
+            <div className='answerDiv'>
+                <BackButton onClick={() => goingBacktoProblems()}/>
                 <h1 className='titleSectionProblems titleSection' >{titleAnswer}</h1>
                 <p className='primaryText'>{answer.primary}</p>
                 {answer.steps && 
@@ -43,12 +45,20 @@ const Problems = ({goingBack}) => {
                         <img className='feedback' src={require('../img/success.svg')} alt="Sí, fue útil" />  
                     </div>
                     <h4 className='questionSupport'>¿Leiste el artículo y aún persiste tu problema?</h4>
-                    <Button title='Contactar a soporte'/>
+                    { answer.transaction ?
+                    <Link to="/Support" style={{textAlign: 'center'}}>
+                        <Button title='Contactar a soporte'/>
+                    </Link>
+                    :
+                    <Link to="/SupportSimple" style={{textAlign: 'center'}}>
+                        <Button title='Contactar a soporte'/>
+                    </Link>
+                    }
                 </div>
             </div>
             :
-            <div>
-                <span className='goBack' onClick={goingBack}>&lt; Volver</span>
+            <div className='answerDiv'>
+                <BackButton onClick={() => goingBack()}/>
                 <h1 className='titleSectionProblems'>Tengo un problema</h1>
                 {problems.map(problem => {
                     return (

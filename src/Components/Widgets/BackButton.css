@@ -1,0 +1,11 @@
+.divBackButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.backButton {
+    height: 1.2em;
+    margin: 0.75em 0 0 0;
+}

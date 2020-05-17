@@ -59,7 +59,7 @@ li:before {
     text-align: center;
     display: inline-block;
     position: absolute;
-    left: 2em;
+    left: 2.6em;
   }
 
 .usefulQuestion {
@@ -90,4 +90,8 @@ li:before {
     font-size: 13px;
     text-align: center;
     margin: 1.4em 2em 0 2em;
+}
+
+.answerDiv {
+    padding: 0.5em 1em;
 }
