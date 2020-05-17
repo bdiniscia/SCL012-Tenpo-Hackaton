@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
-import problems from '../../problems.json'
+import problems from '../problems.json'
 import './Problems.css'
+import Button from './Widgets/Button'
 
 const Problems = ({goingBack}) => {
     const [showAnswer, setShowAnswer] = useState(false)
@@ -35,12 +36,15 @@ const Problems = ({goingBack}) => {
                     })} 
                 </ol>
                 }
-                <h3 className='usefulQuestion'>¿Fue útil este artículo?</h3>
-                <div className='feedbackButtons'>
-                    <img className='feedback' src={require('../../img/fail.svg')} alt="No fue útil" />
-                    <img className='feedback' src={require('../../img/success.svg')} alt="Sí, fue útil" />  
+                <div className='feedbackDiv'>
+                    <h3 className='usefulQuestion'>¿Fue útil este artículo?</h3>
+                    <div className='feedbackButtons'>
+                        <img className='feedback' src={require('../img/fail.svg')} alt="No fue útil" />
+                        <img className='feedback' src={require('../img/success.svg')} alt="Sí, fue útil" />  
+                    </div>
+                    <h4 className='questionSupport'>¿Leiste el artículo y aún persiste tu problema?</h4>
+                    <Button title='Contactar a soporte'/>
                 </div>
-                
             </div>
             :
             <div>
@@ -50,7 +54,7 @@ const Problems = ({goingBack}) => {
                     return (
                         <div className='divProblem' onClick={() => showNewAnswer(problem.answer, problem.problem)} key={problem.id}>
                             <p className='problemQuestion'>{problem.problem}</p>
-                            <img alt='Read more' src={require('../../img/next.svg')} />
+                            <img alt='Read more' src={require('../img/next.svg')} />
                         </div>
                     )
                 })}        

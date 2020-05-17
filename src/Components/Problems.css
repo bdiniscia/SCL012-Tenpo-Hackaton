@@ -68,13 +68,26 @@ li:before {
     justify-content: center;
 }
 
+.feedbackDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .feedbackButtons  {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 0.4em;
 }
 
 .feedback {
     margin: 0 1em;
     height: 4.2em;
+}
+
+.questionSupport {
+    font-size: 13px;
+    text-align: center;
+    margin: 1.4em 2em 0 2em;
 }

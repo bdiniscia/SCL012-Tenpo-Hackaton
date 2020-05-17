@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Help.css'
 import categories from '../help.json'
 import CategoryHelp from './Widgets/CategoryHelp'
-import Problems from './Widgets/Problems'
+import Problems from './Problems'
 
 const Help = () => {
     const [showProblems, setShowProblems] = useState(false)
