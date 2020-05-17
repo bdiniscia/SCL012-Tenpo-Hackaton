@@ -3,6 +3,7 @@ import problems from '../problems.json'
 import './Problems.css'
 import Button from './Widgets/Button'
 import { Link } from "react-router-dom";
+import BackButton from './Widgets/BackButton';
 
 const Problems = ({goingBack}) => {
     const [showAnswer, setShowAnswer] = useState(false)
@@ -25,7 +26,7 @@ const Problems = ({goingBack}) => {
         <div className='problems'>
             { showAnswer ?
             <div className='answerDiv'>
-                <span className='goBack' onClick={() => goingBacktoProblems()}>&lt; Volver</span>
+                <BackButton onClick={() => goingBacktoProblems()}/>
                 <h1 className='titleSectionProblems titleSection' >{titleAnswer}</h1>
                 <p className='primaryText'>{answer.primary}</p>
                 {answer.steps && 
@@ -57,7 +58,7 @@ const Problems = ({goingBack}) => {
             </div>
             :
             <div className='answerDiv'>
-                <span className='goBack' onClick={goingBack}>&lt; Volver</span>
+                <BackButton onClick={() => goingBack()}/>
                 <h1 className='titleSectionProblems'>Tengo un problema</h1>
                 {problems.map(problem => {
                     return (

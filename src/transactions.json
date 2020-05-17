@@ -1,0 +1,37 @@
+[
+    {
+        "id": "t01",
+        "type": "Retiro de plata",
+        "title": "Retiro de plata por transferencia",
+        "date": "13/05/2020",
+        "amount": "- $50.000"
+    },
+    {
+        "id": "t02",
+        "type": "Carga de plata",
+        "title": "Carga de plata por transferencia",
+        "date": "12/05/2020",
+        "amount": "+ $50.000"
+      },
+      {
+        "id": "t03",
+        "type": "Carga de plata",
+        "title": "Carga de plata en efectivo",
+        "date": "10/05/2020",
+        "amount": "+ $20.000"
+      },
+      {
+        "id": "t04",
+        "type": "Compra en internet",
+        "title": "Compra en Falabella S.A.",
+        "date": "09/05/2020",
+        "amount": "- $25.990"
+      },
+      {
+        "id": "t04",
+        "type": "Pago de suscripción",
+        "title": "Pago de suscripción a Netflix",
+        "date": "09/05/2020",
+        "amount": "- $10.190"
+      }
+]

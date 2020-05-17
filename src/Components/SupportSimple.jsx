@@ -7,7 +7,9 @@ const SupportSimple = () => {
     return (
         <div className='support'>
             <HeaderRequirement />
-            <InputRequirement />
+            <div className='contentSupport'>
+                <InputRequirement />
+            </div>
         </div>
     )
 }
