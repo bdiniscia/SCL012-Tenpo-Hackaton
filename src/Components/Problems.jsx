@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import problems from '../problems.json'
 import './Problems.css'
 import Button from './Widgets/Button'
+import { Link } from "react-router-dom";
 
 const Problems = ({goingBack}) => {
     const [showAnswer, setShowAnswer] = useState(false)
@@ -23,7 +24,7 @@ const Problems = ({goingBack}) => {
     return (
         <div className='problems'>
             { showAnswer ?
-            <div>
+            <div className='answerDiv'>
                 <span className='goBack' onClick={() => goingBacktoProblems()}>&lt; Volver</span>
                 <h1 className='titleSectionProblems titleSection' >{titleAnswer}</h1>
                 <p className='primaryText'>{answer.primary}</p>
@@ -43,11 +44,19 @@ const Problems = ({goingBack}) => {
                         <img className='feedback' src={require('../img/success.svg')} alt="Sí, fue útil" />  
                     </div>
                     <h4 className='questionSupport'>¿Leiste el artículo y aún persiste tu problema?</h4>
-                    <Button title='Contactar a soporte'/>
+                    { answer.transaction ?
+                    <Link to="/Support" style={{textAlign: 'center'}}>
+                        <Button title='Contactar a soporte'/>
+                    </Link>
+                    :
+                    <Link to="/SupportSimple" style={{textAlign: 'center'}}>
+                        <Button title='Contactar a soporte'/>
+                    </Link>
+                    }
                 </div>
             </div>
             :
-            <div>
+            <div className='answerDiv'>
                 <span className='goBack' onClick={goingBack}>&lt; Volver</span>
                 <h1 className='titleSectionProblems'>Tengo un problema</h1>
                 {problems.map(problem => {
