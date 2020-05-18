@@ -7,6 +7,7 @@ import Home from './Components/Home';
 import Pending from './Components/Pending';
 import Support from './Components/Support'
 import SupportSimple from './Components/SupportSimple'
+import Movements from './Components/Movements'
 import {
   BrowserRouter as Router,
   Switch,
@@ -34,6 +35,9 @@ const App = () => {
             </Route>
             <Route path="/SupportSimple">
               <SupportSimple />
+            </Route>
+            <Route path="/Movements">
+              <Movements />
             </Route>
           </Switch>
         <Navbar />
