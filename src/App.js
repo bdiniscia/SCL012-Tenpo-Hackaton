@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Help from './Components/Help';
 import Topbar from './Components/Topbar';
+import TopbarMovements from './Components/TopbarMovements'
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Pending from './Components/Pending';
@@ -41,6 +42,7 @@ const App = () => {
               <SupportSimple />
             </Route>
             <Route path="/Movements">
+            <TopbarMovements />
               <Movements />
             </Route>
           </Switch>
