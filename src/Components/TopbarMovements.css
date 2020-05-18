@@ -1,0 +1,19 @@
+.topbar {
+    
+  height: 64px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  color: #595959;
+  font-family: "Montserrat", sans-serif;
+ 
+  font-size: 14px;
+}
+
+.squareMenu {
+  position: absolute;
+  right: 2em;
+}
+
+
+

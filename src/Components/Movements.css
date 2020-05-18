@@ -1,0 +1,11 @@
+body {
+    background-color: #F2F2F2;
+}
+
+.sectionMovements {
+    display: flex;
+    flex-direction:  column;
+    width: 100%;
+    margin-top: -1.8em;
+    align-items: center;
+}
