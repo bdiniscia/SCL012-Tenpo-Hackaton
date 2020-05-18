@@ -72,11 +72,11 @@ const Prueba = () => {
                     </div>
                   }
 
-                  <IconButton>
+                  {/* <IconButton>
 
                   
                     <ErrorOutlineIcon />
-                  </IconButton>
+                  </IconButton> */}
                   
                 </Box>
               </Grid>
