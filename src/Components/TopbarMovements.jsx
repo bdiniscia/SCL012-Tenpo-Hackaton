@@ -20,9 +20,10 @@ const NavbarMovements = () => {
       <IconButton className={classes.title}>
         <KeyboardBackspaceIcon />
       </IconButton>
+
       <Typography variant="p">TU PLATA DISPONIBLE</Typography>
       <Typography variant="p"><b>$100.000</b></Typography>
-      <SquareMenuMovements className="squareMenu" />
+      <SquareMenuMovements className="squareMenuMovements" />
     </div>
   );
 };
