@@ -1,0 +1,44 @@
+.help {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    overflow-x: scroll;
+    margin-bottom: 70px;
+}
+
+.welcomeHelp {
+    background-image: url('../img/backgroundHelp.png');
+    width: 100%;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.titleHelp {
+    font-size: 22px;
+    margin-bottom: 1.6em;
+}
+
+.searchInput {
+    margin-bottom: 6em;
+    border: none;
+    border-radius: 6px;
+    padding: 1.2em 1.2em 1.2em 3.3em;
+    width: 80%;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 1em;
+    color: #595959;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sectionCategories {
+    display: flex;
+    flex-direction:  column;
+    width: 100%;
+    margin-top: -1.8em;
+    align-items: center;
+}

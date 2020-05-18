@@ -1,0 +1,24 @@
+.navbar {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: space-around;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+}
+
+.divIcon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textIcon {
+    margin: 0.5em 0 0 0;
+}

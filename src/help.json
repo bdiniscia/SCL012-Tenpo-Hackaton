@@ -1,0 +1,42 @@
+[
+    {
+        "id": "s02",
+        "title": "Soy nuevo en Tenpo",
+        "icon": "/img/newUsers.svg"
+    },
+    {
+        "id": "s03",
+        "title": "Tarjeta Tenpo Mastercard",
+        "icon": "/img/cardHelp.svg"
+    },
+    {
+        "id": "s04",
+        "title": "Cargar plata a Tenpo",
+        "icon": "/img/chargeMoney.svg"
+    },
+    {
+        "id": "s05",
+        "title": "Retirar plata",
+        "icon": "/img/withdrawal.svg"
+    },
+    {
+        "id": "s06",
+        "title": "Comprar y pagar suscripciones",
+        "icon": "/img/suscriptions.svg"
+    },
+    {
+        "id": "s07",
+        "title": "Cambiar y recuperar contraseña",
+        "icon": "/img/password.svg"
+    },
+    {
+        "id": "s08",
+        "title": "Comisiones",
+        "icon": "/img/commissions.svg"
+    },
+    {
+        "id": "s09",
+        "title": "Bloqueo de tarjeta o pérdida del celular",
+        "icon": "/img/blockCard.svg"
+    }
+  ]

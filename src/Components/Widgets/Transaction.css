@@ -1,0 +1,51 @@
+.transaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    color: #333;
+}
+
+.transacPart {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.rightPart {
+    align-items: center;
+    justify-content: center;
+}
+
+.dateTransac {
+    font-size: 12px;
+    color: #ADADAD;
+    margin-bottom: 1em;
+}
+
+.titleTransac {
+    font-size: 13px;
+    line-height: 14px;
+    color: #595959;
+}
+
+.amountTransac {
+    background-color: #D4F9F5;
+    text-align: center;
+    color: #00BAA4;
+    font-weight: bold;
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 0.5em;
+}
+
+.typeTransac {
+    color: #00BAA4;
+    font-size: 12px;
+    text-align: center;
+}
