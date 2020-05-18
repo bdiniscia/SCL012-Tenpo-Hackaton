@@ -33,7 +33,7 @@ const Prueba = () => {
       <TopbarMovements />
       <Grid container>
         <Grid item xs={12} sm={12} md={12}>
-          <Box border={0} p={3} bgcolor="#F2F2F2">
+          <Box border={0} p={2} bgcolor="#F2F2F2">
             <Typography>
               <h2>
                 <b>Transsacciones descontadas</b>

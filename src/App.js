@@ -6,8 +6,8 @@ import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import Pending from './Components/Pending';
 import Support from './Components/Support'
-import Movements from './Components/Movements'
 import SupportSimple from './Components/SupportSimple'
+import Movements from './Components/Movements'
 import {
   BrowserRouter as Router,
   Switch,
