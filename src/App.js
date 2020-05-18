@@ -19,21 +19,25 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Topbar />
           <Switch>
             <Route exact path="/">
+              <Topbar />
               <Home />
             </Route>
             <Route path="/Pending">
+              <Topbar />
               <Pending />
             </Route>
             <Route path="/Help">
+              <Topbar />
               <Help />
             </Route>
             <Route path="/Support">
+              <Topbar />
               <Support />
             </Route>
             <Route path="/SupportSimple">
+              <Topbar />
               <SupportSimple />
             </Route>
             <Route path="/Movements">
