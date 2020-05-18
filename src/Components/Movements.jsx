@@ -38,6 +38,7 @@
 //   return (
 
 //     <Fragment>
+//      <TopbarMovements />
 
     
 
@@ -65,7 +66,7 @@
 
 
     // <Fragment>
-    //   <TopbarMovements />
+    
 
     //   <Grid container className="topbar">
     //     <Grid item xs={12} sm={12} md={12}>
