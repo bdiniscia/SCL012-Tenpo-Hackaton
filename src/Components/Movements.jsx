@@ -29,10 +29,11 @@ const Prueba = () => {
 
   return (
     <Fragment>
+     <div className="movements">
       <TopbarMovements />
-      <Grid container className="topbar">
+      <Grid container>
         <Grid item xs={12} sm={12} md={12}>
-          <Box border={0} p={1} bgcolor="#F2F2F2">
+          <Box border={0} p={3} bgcolor="#F2F2F2">
             <Typography>
               <h2>
                 <b>Transsacciones descontadas</b>
@@ -66,6 +67,8 @@ const Prueba = () => {
           ))}
         </Grid>
       </Grid>
+      </div>
+     
     </Fragment>
   );
 };
