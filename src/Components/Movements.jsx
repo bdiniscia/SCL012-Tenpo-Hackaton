@@ -8,6 +8,7 @@ import { firebase } from "../firebase";
 const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
+    
   },
 }));
 
