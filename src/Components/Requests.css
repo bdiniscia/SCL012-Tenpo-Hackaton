@@ -29,6 +29,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 12px;
+  width: 112px;
 }
 
 .noSolicitud {
@@ -51,4 +52,8 @@
 .iconStatus {
   height: 2em;
   margin-right: 0.3em;
+}
+
+.iconCheck {
+  height: 1.6em;
 }
