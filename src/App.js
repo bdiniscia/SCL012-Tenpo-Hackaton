@@ -12,6 +12,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Requests from './Components/Requests'
 
 
 
@@ -34,8 +35,12 @@ const App = () => {
               <SupportSimple />
             </Route>
             <Route path="/Movements">
-            <TopbarMovements />
+              <TopbarMovements />
               <Movements />
+            </Route>
+            <Route path="/Requests">
+              <TopbarMovements />
+              <Requests />
             </Route>
           </Switch>
         <Navbar />
