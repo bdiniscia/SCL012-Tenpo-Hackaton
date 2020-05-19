@@ -1,21 +1,30 @@
 body {
-    background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .movements {
-    font-family: 'Montserrat', sans-serif;
-    color: #595959;
-    overflow-x: scroll;
-    font-size: 14px;
-
+  font-family: "Montserrat", sans-serif;
+  color: #595959;
+  overflow-x: scroll;
+  font-size: 14px;
 }
 
 .sectionMovements {
-    display: flex;
-    flex-direction:  column;
-    width: 100%;
-    margin-top: -1.8em;
-    align-items: center;
-    
-   
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: -1.8em;
+  align-items: center;
 }
+
+.prueba {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+
