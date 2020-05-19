@@ -7,7 +7,6 @@ import { firebase } from "../firebase";
 
 
 const useStyles = makeStyles((theme) => ({
-
   transtationState: {
     marginLeft: theme.spacing(2),
   },
@@ -68,20 +67,17 @@ const Prueba = () => {
                     <div key={item.id}>
                       <div className="prueba">
                         <div className={classes.transtationState}>
-                          
                           <div className="datos">
-                          
-                          <p>
-                            <b>
-                              {item.transaccion} {item.monto}
-                            </b>
-                          </p>
+                            <p>
+                              <b>
+                                {item.transaccion} {item.monto}
+                              </b>
+                            </p>
                           </div>
                           <div className="datos">
-
-                          <p>
-                            {item.estado} {item.fecha}
-                          </p>
+                            <p>
+                              {item.estado} {item.fecha}
+                            </p>
                           </div>
                         </div>
                         <div className="info">

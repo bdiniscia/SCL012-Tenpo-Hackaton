@@ -1,10 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, Fragment} from 'react'
 import './Support.css'
 import HeaderRequirement from './Widgets/HeaderRequirement'
 import transactions from '../transactions.json'
 import Transaction from './Widgets/Transaction'
 import InputRequirement from './Widgets/InputRequirement'
 import BackButton from './Widgets/BackButton'
+import Topbar from './Topbar'
 
 const Support = () => {
 
@@ -22,35 +23,38 @@ const Support = () => {
     }
 
     return (
-        <div className='support'>
-            <HeaderRequirement />
-            { showInput ?
-            <div className='contentSupport'>
-                <BackButton onClick={() => goBackToTransactions()}/>
-                <div className='chosenTransaction'>
-                    <p className='chosenTitle'>{problematicTransac.title}</p>
-                    <p className='chosenAmount'>{problematicTransac.amount}</p>
-                    <p className='chosenDate'>{problematicTransac.date}</p>
+        <Fragment>
+            <Topbar />
+            <div className='support'>
+                <HeaderRequirement />
+                { showInput ?
+                <div className='contentSupport'>
+                    <BackButton onClick={() => goBackToTransactions()}/>
+                    <div className='chosenTransaction'>
+                        <p className='chosenTitle'>{problematicTransac.title}</p>
+                        <p className='chosenAmount'>{problematicTransac.amount}</p>
+                        <p className='chosenDate'>{problematicTransac.date}</p>
+                    </div>
+                    < InputRequirement />
                 </div>
-                < InputRequirement />
+                :
+                <div>
+                    <h2 className='questionTransac'>¿En cuál transacción tuviste problemas?</h2>
+                    {transactions.map(transaction => {
+                        return(
+                            <Transaction
+                            onClick={() => showInputView(transaction)}
+                            date={transaction.date}
+                            title={transaction.title}
+                            amount={transaction.amount}
+                            type={transaction.type}
+                            />
+                        )
+                    })}
+                </div>
+                }
             </div>
-            :
-            <div>
-                <h2 className='questionTransac'>¿En cuál transacción tuviste problemas?</h2>
-                {transactions.map(transaction => {
-                    return(
-                        <Transaction
-                        onClick={() => showInputView(transaction)}
-                        date={transaction.date}
-                        title={transaction.title}
-                        amount={transaction.amount}
-                        type={transaction.type}
-                        />
-                    )
-                })}
-            </div>
-            }
-        </div>
+        </Fragment>
     )
 }
 

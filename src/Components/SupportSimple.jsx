@@ -1,16 +1,20 @@
-import React from 'react'
+import React, {Fragment} from 'react'
 import './Support.css'
 import HeaderRequirement from './Widgets/HeaderRequirement'
 import InputRequirement from './Widgets/InputRequirement'
+import Topbar from './Topbar'
 
 const SupportSimple = () => {
     return (
-        <div className='support'>
-            <HeaderRequirement />
-            <div className='contentSupport'>
-                <InputRequirement />
+        <Fragment>
+            <Topbar />
+            <div className='support'>
+                <HeaderRequirement />
+                <div className='contentSupport'>
+                    <InputRequirement />
+                </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
 
