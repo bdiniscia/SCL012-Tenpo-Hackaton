@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 import './Support.css'
-import HeaderRequirement from './Widgets/HeaderRequirement'
+import HeaderSections from './Widgets/HeaderSections'
 import InputRequirement from './Widgets/InputRequirement'
 import Topbar from './Topbar'
 
@@ -9,7 +9,7 @@ const SupportSimple = () => {
         <Fragment>
             <Topbar />
             <div className='support'>
-                <HeaderRequirement />
+                <HeaderSections  title='Solicitud'/>
                 <div className='contentSupport'>
                     <InputRequirement />
                 </div>
