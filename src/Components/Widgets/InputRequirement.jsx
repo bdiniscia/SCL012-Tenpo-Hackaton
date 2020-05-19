@@ -36,19 +36,18 @@ const InputRequirement = () => {
       <p className="question">
         Cuéntanos qué pasó y solucionaremos tu requerimiento:
       </p>
-      <div className="pruebaa">
-        <form onSubmit={sendMessage}>
-          <input
-            type="text"
-            className="textareaRequirement"
-            placeholder="Escribe aquí..."
-            onChange={(e) => setRequirement(e.target.value)}
-            value={requirements}
-          />
-
+      <form className='formRequirement' onSubmit={sendMessage}>
+        <textarea
+          type="text"
+          className="textareaRequirement"
+          placeholder="Escribe aquí..."
+          onChange={(e) => setRequirement(e.target.value)}
+          value={requirements}
+        />
+        <div className='divButton'>
           <Button type="submit" title="Enviar" ENVIAR />
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
   );
 };
