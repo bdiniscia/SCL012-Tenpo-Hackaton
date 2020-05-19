@@ -35,7 +35,7 @@ const Support = () => {
                         <p className='chosenAmount'>{problematicTransac.amount}</p>
                         <p className='chosenDate'>{problematicTransac.date}</p>
                     </div>
-                    < InputRequirement />
+                    < InputRequirement setProblematicTransac={problematicTransac}/>
                 </div>
                 :
                 <div>

@@ -3,7 +3,7 @@ import { firebase } from "../../firebase";
 import "./InputRequirement.css";
 import Button from "./Button";
 
-const InputRequirement = () => {
+const InputRequirement = ({setProblematicTransac}) => {
   const [requirements, setRequirement] = React.useState("");
 
   const sendMessage = async (e) => {
@@ -19,6 +19,7 @@ const InputRequirement = () => {
       const newRequirement = {
         message: requirements,
         fecha: Date.now(),
+
       };
       const data = await db.collection("requirements").add(newRequirement);
 
