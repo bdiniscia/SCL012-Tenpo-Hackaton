@@ -1,62 +1,49 @@
 import React, { Fragment } from "react";
-import "./Movements.css";
-import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
+import "./Requests.css";
 import { firebase } from "../firebase";
-import Tooltip from './Tooltip'
-
-
+import Topbar from "./Topbar";
+import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  transtationState: {
+    requestState: {
     marginLeft: theme.spacing(2),
   },
-
 }));
 
-
-
-const Prueba = () => {
+const Requests = () => {
   const classes = useStyles();
-  
 
-  const [movement, setMovement] = React.useState([]);
+  const [request, setRequest] = React.useState([]);
 
   React.useEffect(() => {
-    const obtenerDatos = async () => {
+    const getRequests = async () => {
       try {
         const db = firebase.firestore();
-        const data = await db.collection("Movements").get();
+        const data = await db.collection("requirements").get();
         const arrayData = data.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
         }));
         console.log(arrayData);
-        setMovement(arrayData);
+        setRequest(arrayData);
       } catch (error) {
         console.log(error);
       }
     };
-    obtenerDatos();
+    getRequests();
   }, []);
 
   return (
     <Fragment>
-      <div className="movements">
+      <Topbar />
+      <div className="requests">
+        <header className="welcomeRequests">
+          <h1 className="titleHelp">Mis Solicitudes</h1>
+        </header>
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} className="sectionMovements">
-            <Box border={0} p={2} bgcolor="#F2F2F2">
-              <Typography>
-                <h2>
-                  <b>Transsacciones descontadas</b>
-                </h2>
-              </Typography>
-            </Box>
-          </Grid>
-
           <Grid item xs={12} sm={12} md={12}>
-            {movement.map((item) => (
-              <Grid item xs={12} sm={12} md={12} className="categoryMovements">
+            {request.map((item) => (
+              <Grid item xs={12} sm={12} md={12} className="categoryRequests">
                 <Box
                   p={0}
                   border={1}
@@ -66,25 +53,25 @@ const Prueba = () => {
                 >
                   {
                     <div key={item.id}>
-                      <div className="prueba">
-                        <div className={classes.transtationState}>
+                      <div className="pruebaRequests">
+                        <div className={classes.requestState}>
                           <div className="datos">
                             <p>
                               <b>
-                                {item.transaccion} {item.monto}
+                                {item.numero} : {item.id}
                               </b>
                             </p>
+                            <p>{item.tipo}</p>
                           </div>
                           <div className="datos">
-                            <p>
-                              {item.estado} {item.fecha}
-                            </p>
+                            <p>{item.monto}</p>
+                            <p>{item.fecha}</p>
                           </div>
                         </div>
-                        <div className="info">
-                          <IconButton >
-                            <Tooltip />
-                          </IconButton>
+                        <div className="infoRequests">
+                          {item.estado}
+
+                          <IconButton></IconButton>
                         </div>
                       </div>
                     </div>
@@ -99,4 +86,4 @@ const Prueba = () => {
   );
 };
 
-export default Prueba;
+export default Requests;
