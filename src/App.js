@@ -38,7 +38,7 @@ const App = () => {
             </Route>
             <Route path="/Requests">
               <TopbarMovements />
-              <Requests /> />
+              <Requests />
             </Route>
           </Switch>
         <Navbar />
