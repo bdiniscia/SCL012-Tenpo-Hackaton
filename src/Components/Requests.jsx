@@ -51,7 +51,7 @@ const Requests = () => {
                   </div>
                   <div className='statusRequest'>
                     { item.estado === 'Resuelto' ?
-                    <img className='iconStatus' alt='Resuelto' src={require('../img/check.png')} />
+                    <img className='iconStatus iconCheck' alt='Resuelto' src={require('../img/check.png')} />
                     :
                     <img className='iconStatus' alt='En proceso' src={require('../img/inprocess.png')} />
                     }
