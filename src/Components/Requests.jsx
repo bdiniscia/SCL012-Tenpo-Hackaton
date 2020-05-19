@@ -70,7 +70,6 @@ const Requests = () => {
                         </div>
                         <div className="infoRequests">
                           {item.estado}
-
                           <IconButton></IconButton>
                         </div>
                       </div>

@@ -18,7 +18,6 @@ import Requests from './Components/Requests'
 const App = () => {
   return (
     <Fragment>
-      <Requests />
       <Router>
           <Switch>
             <Route exact path="/">
@@ -34,8 +33,12 @@ const App = () => {
               <SupportSimple />
             </Route>
             <Route path="/Movements">
-            <TopbarMovements />
+              <TopbarMovements />
               <Movements />
+            </Route>
+            <Route path="/Requests">
+              <TopbarMovements />
+              <Requests /> />
             </Route>
           </Switch>
         <Navbar />
