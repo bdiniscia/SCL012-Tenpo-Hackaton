@@ -52,10 +52,12 @@ const Home = () => {
                         <img className='iconOptionsMore smallerIconsHome' src={require('../img/05pocket.svg')} alt='Bolsillo' />
                         <span className='textOptionsMore'>Bolsillo</span>
                     </div>
-                    <div className='optionsMore'>
-                        <img className='iconOptionsMore' src={require('../img/06requirement.svg')} alt='Mis solicitudes' />
-                        <span className='textOptionsMore'>Mis solicitudes</span>
-                    </div>
+                    <Link to='/Requests' style={{textDecoration: 'none'}}>
+                        <div className='optionsMore'>
+                            <img className='iconOptionsMore' src={require('../img/06requirement.svg')} alt='Mis solicitudes' />
+                            <span className='textOptionsMore'>Mis solicitudes</span>
+                        </div>
+                    </Link>
                 </section>
             </div>
         </Fragment>
