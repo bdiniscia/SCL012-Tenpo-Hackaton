@@ -1,7 +1,85 @@
 .home {
+    /* background-image: url('../img/Frame.png');
     width: 100%;
-    height: 15em;
+    height: 85vh;
+    background-repeat: no-repeat;
+    margin-top: 63px;
+    background-size: contain;
+    background-color: #f7f7f7; */
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerHome {
+    display: flex;
+    flex-direction: column;
+    padding-top: 64px;
+    align-items: center;
+    color: #fff;
+    height: 11em;
     background: #00BAA4 0% 0% no-repeat padding-box;
     border-radius: 16px;
     opacity: 1;
+    width: 100%;
+}
+
+.previewAmount {
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 0.2em;
+}
+
+.amountHome {
+    font-weight: 200;
+    font-size: 50px;
+    margin: 0 0 0.2em 0;
+}
+
+.toDiscount {
+    font-weight: bold;
+}
+
+.menuHome {
+    width: 80%;
+    border-radius: 8px;
+    background-color: #fff;
+    display: flex;
+    margin-top: -2em;
+    justify-content: space-around;
+    padding: 0.5em;
+}
+
+.optionsMenuHome {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 30%;
+    padding: 0.3em;
+}
+
+.textOptionMenu {
+    color: #333;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 0.3em;
+}
+
+.borderRight {
+    border-right: 1px solid #E8E8E8;
+}
+
+.iconCharge {
+    height: 2em;
+}
+
+.iconWithdraw {
+    height: 2.1em;
+}
+
+.iconHistory {
+    height: 2.5em;
 }
