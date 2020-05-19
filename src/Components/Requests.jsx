@@ -5,7 +5,7 @@ import Topbar from "./Topbar";
 import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  transtationState: {
+    requestState: {
     marginLeft: theme.spacing(2),
   },
 }));
@@ -53,8 +53,8 @@ const Requests = () => {
                 >
                   {
                     <div key={item.id}>
-                      <div className="prueba">
-                        <div className={classes.transtationState}>
+                      <div className="pruebaRequests">
+                        <div className={classes.requestState}>
                           <div className="datos">
                             <p>
                               <b>
@@ -68,7 +68,7 @@ const Requests = () => {
                             <p>{item.fecha}</p>
                           </div>
                         </div>
-                        <div className="info">
+                        <div className="infoRequests">
                           {item.estado}
 
                           <IconButton></IconButton>
