@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./Movements.css";
 import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
-import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import Typography from "@material-ui/core/Typography";
 import { firebase } from "../firebase";
+import Tooltip from './Tooltip'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -85,8 +85,8 @@ const Prueba = () => {
                           </div>
                         </div>
                         <div className="info">
-                          <IconButton>
-                            <ErrorOutlineIcon />
+                          <IconButton >
+                            <Tooltip />
                           </IconButton>
                         </div>
                       </div>
