@@ -2,16 +2,9 @@ import React, { Fragment } from "react";
 import "./Requests.css";
 import { firebase } from "../firebase";
 import Topbar from "./Topbar";
-import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
-
-const useStyles = makeStyles((theme) => ({
-    requestState: {
-    marginLeft: theme.spacing(2),
-  },
-}));
+import HeaderSections from "./Widgets/HeaderSections";
 
 const Requests = () => {
-  const classes = useStyles();
 
   const [request, setRequest] = React.useState([]);
 
@@ -37,49 +30,37 @@ const Requests = () => {
     <Fragment>
       <Topbar />
       <div className="requests">
-        <header className="welcomeRequests">
-          <h1 className="titleHelp">Mis Solicitudes</h1>
-        </header>
-        <Grid container>
-          <Grid item xs={12} sm={12} md={12}>
-            {request.map((item) => (
-              <Grid item xs={12} sm={12} md={12} className="categoryRequests">
-                <Box
-                  p={0}
-                  border={1}
-                  borderColor="#dadada"
-                  mt={0.2}
-                  bgcolor="#fff"
-                >
-                  {
-                    <div key={item.id}>
-                      <div className="pruebaRequests">
-                        <div className={classes.requestState}>
-                          <div className="datos">
-                            <p>
-                              <b>
-                                {item.numero} : {item.id}
-                              </b>
-                            </p>
-                            <p>{item.tipo}</p>
-                          </div>
-                          <div className="datos">
-                            <p>{item.monto}</p>
-                            <p>{item.fecha}</p>
-                          </div>
-                        </div>
-                        <div className="infoRequests">
-                          {item.estado}
-                          <IconButton></IconButton>
-                        </div>
-                      </div>
+        <HeaderSections title='Mis solicitudes' />
+        <section className='sectionRequests'>
+            {request.map((item) => {
+              return(
+                <div className='divRequest'>
+                  <div className='infoRequest'>
+                    <div className='noSolitudDiv infoDetails'>
+                      <span className='noSolicitud'>Nº de solicitud: </span><span>{item.id.slice(0, 6)}</span>
                     </div>
-                  }
-                </Box>
-              </Grid>
-            ))}
-          </Grid>
-        </Grid>
+                    {item.transac ?
+                    <Fragment>
+                      <span className='infoDetails'>{item.transac.title}</span>
+                      <span className='infoDetails'>{item.transac.amount}</span>
+                    </Fragment>
+                    :
+                    <span className='infoDetails'>Solicitud sin transferencia asociada</span>
+                    }
+                    <span className='infoDetails infoDate'>{item.fecha}</span>
+                  </div>
+                  <div className='statusRequest'>
+                    { item.estado === 'Resuelto' ?
+                    <img className='iconStatus' alt='Resuelto' src={require('../img/check.png')} />
+                    :
+                    <img className='iconStatus' alt='En proceso' src={require('../img/inprocess.png')} />
+                    }
+                    <span>{item.estado}</span>
+                  </div>
+                </div>
+              )
+            })}
+        </section>
       </div>
     </Fragment>
   );

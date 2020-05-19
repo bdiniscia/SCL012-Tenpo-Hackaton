@@ -3,8 +3,14 @@ import { firebase } from "../../firebase";
 import "./InputRequirement.css";
 import Button from "./Button";
 
-const InputRequirement = ({setProblematicTransac}) => {
+const InputRequirement = ({problematicTransac}) => {
   const [requirements, setRequirement] = React.useState("");
+
+  React.useEffect(() => { 
+    if (!problematicTransac) {
+      problematicTransac = false
+    }
+  })
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -18,8 +24,9 @@ const InputRequirement = ({setProblematicTransac}) => {
       const db = firebase.firestore();
       const newRequirement = {
         message: requirements,
-        fecha: Date.now(),
-
+        fecha: new Date().toLocaleDateString(),
+        transac: problematicTransac,
+        estado: 'En proceso'
       };
       const data = await db.collection("requirements").add(newRequirement);
 
