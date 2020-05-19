@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react';
 import './App.css';
 import Help from './Components/Help';
-import Topbar from './Components/Topbar';
 import TopbarMovements from './Components/TopbarMovements'
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
@@ -13,11 +12,13 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Requests from './Components/Requests'
 
 
 const App = () => {
   return (
     <Fragment>
+      <Requests />
       <Router>
           <Switch>
             <Route exact path="/">
