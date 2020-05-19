@@ -31,9 +31,9 @@ const Problems = ({goingBack}) => {
                 <p className='primaryText'>{answer.primary}</p>
                 {answer.steps && 
                 <ol>
-                    {answer.steps.map(step => {
+                    {answer.steps.map((step, i) => {
                         return (
-                            <li className='listStep'>{step}</li>
+                            <li key={i} className='listStep'>{step}</li>
                         )
                     })} 
                 </ol>

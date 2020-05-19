@@ -40,7 +40,7 @@ const Help = () => {
                     {categories.map(category => {
                         return(
                             <CategoryHelp
-                            keyId={category.id}
+                            key={category.id}
                             icon={category.icon}
                             title={category.title}
                             />

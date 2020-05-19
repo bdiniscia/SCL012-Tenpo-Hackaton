@@ -6,6 +6,7 @@ import { firebase } from "../firebase";
 import Tooltip from './Tooltip'
 
 
+
 const useStyles = makeStyles((theme) => ({
   transtationState: {
     marginLeft: theme.spacing(2),
@@ -17,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Prueba = () => {
   const classes = useStyles();
+  
 
   const [movement, setMovement] = React.useState([]);
 

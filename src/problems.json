@@ -17,7 +17,7 @@
         "id": "p02",
         "problem": "Hice una carga y mi saldo no se actualizó",
         "answer": {
-            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago pero el monto no llegó. Te recomendamos esperar 10 minutos ya que a veces los sistemas tienen un desfase pequeño por temas de conectividad. También prueba cerrar y volver a ingresar a la App.  Si aún persiste el problema no te preocupes, escríbenos en el siguiente formulario o llámanos al 600 360 0355 y te ayudaremos para que podamos validar tu caso en nuestro sistema.",
+            "primary": "Si realizaste una recarga y tuviste un resultado exitoso con el comprobante de pago pero no llegó, te recomendamos esperar 10 minutos ya que a veces los sistemas tienen un desfase pequeño por temas de conectividad. También, prueba cerrar y volver a ingresar a la App.",
             "transaction": false
         }
     },
