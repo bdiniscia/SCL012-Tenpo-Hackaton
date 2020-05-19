@@ -6,10 +6,10 @@ import { makeStyles, IconButton } from "@material-ui/core";
 import KeyboardBackspaceIcon from "@material-ui/icons/KeyboardBackspace";
 
 const useStyles = makeStyles((theme) => ({
-  back: {
-    flexGrow: 1,
-   
+  backButon: {
+    marginRight: theme.spacing(2),
   },
+ 
 }));
 
 const NavbarMovements = () => {
@@ -17,7 +17,7 @@ const NavbarMovements = () => {
 
   return (
     <div className="topbarMovements">
-      <IconButton className={classes.title}>
+      <IconButton className={classes.backButon} color="#595959">
         <KeyboardBackspaceIcon  />
       </IconButton>
       <div className="title">

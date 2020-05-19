@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
 import "./Movements.css";
-import { Box, Grid, makeStyles, IconButton } from "@material-ui/core";
+import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
 import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import Typography from "@material-ui/core/Typography";
 import { firebase } from "../firebase";
 
 const useStyles = makeStyles((theme) => ({
-  title: {
-    flexGrow: 1,
-    
+  transtationState: {
+    marginLeft: theme.spacing(2),
   },
 }));
 
@@ -51,7 +50,7 @@ const Prueba = () => {
 
           <Grid item xs={12} sm={12} md={12}>
             {movement.map((item) => (
-              <Grid item xs={12} sm={12} md={12} className={classes.title}>
+              <Grid item xs={12} sm={12} md={12} className="categoryMovements">
                 <Box
                   p={0}
                   border={1}
@@ -61,24 +60,29 @@ const Prueba = () => {
                 >
                   {
                     <div key={item.id}>
-                      <p>
-                        <b>
-                          {item.transaccion} {item.monto}
-                        </b>
-                      </p>
-
-                      <p>
-                        {item.estado} {item.fecha}
-                      </p>
+                      <div className="prueba">
+                        <div className={classes.transtationState}>
+                          <div className="datos">
+                            <p>
+                              <b>
+                                {item.transaccion} {item.monto}
+                              </b>
+                            </p>
+                          </div>
+                          <div className="datos">
+                            <p>
+                              {item.estado} {item.fecha}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="info">
+                          <IconButton>
+                            <ErrorOutlineIcon />
+                          </IconButton>
+                        </div>
+                      </div>
                     </div>
                   }
-
-                  {/* <IconButton>
-
-                  
-                    <ErrorOutlineIcon />
-                  </IconButton> */}
-                  
                 </Box>
               </Grid>
             ))}
