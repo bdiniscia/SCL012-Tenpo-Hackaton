@@ -25,3 +25,9 @@
     align-self: flex-end;
     margin-right: -1.8em;
 }
+.pruebaa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
