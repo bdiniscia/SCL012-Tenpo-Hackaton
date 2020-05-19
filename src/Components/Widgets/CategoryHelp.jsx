@@ -1,9 +1,9 @@
 import React from 'react'
 import './CategoryHelp.css'
 
-const CategoryHelp = ({keyId, icon, title, onClick}) => {
+const CategoryHelp = ({icon, title, onClick}) => {
     return (
-        <div className='categoryHelp' key={keyId} onClick={onClick}>
+        <div className='categoryHelp' onClick={onClick}>
             <div className='contentCategory' >
                 <img alt={title} src={icon} className='iconCategory'/>
                 <span className='categoryText'>{title}</span>
