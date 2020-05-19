@@ -2,6 +2,9 @@ import React, { Fragment } from "react";
 import "./Movements.css";
 import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+
+
+
 import { firebase } from "../firebase";
 import Tooltip from './Tooltip'
 
@@ -31,7 +34,6 @@ const Prueba = () => {
           id: doc.id,
           ...doc.data(),
         }));
-        console.log(arrayData);
         setMovement(arrayData);
       } catch (error) {
         console.log(error);
@@ -43,22 +45,17 @@ const Prueba = () => {
   return (
     <Fragment>
       <div className="movements">
+      <header className="welcomeMovements">
+          <Typography variant="h5">Transsacciones descontadas</Typography>
+        </header>
+        <section>
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} className="movementsSection">
-            <Box border={0} p={2} bgcolor="#F2F2F2">
-              <Typography>
-                <h2>
-                  <b>Transsacciones descontadas</b>
-                </h2>
-              </Typography>
-            </Box>
-          </Grid>
 
           <Grid item xs={12} sm={12} md={12}>
             {movement.map((item) => (
               <Grid item xs={12} sm={12} md={12} className="categoryMovements">
                 <Box
-                  p={0}
+                  p={1}
                   border={1}
                   borderColor="#dadada"
                   mt={0.2}
@@ -69,20 +66,20 @@ const Prueba = () => {
                       <div className="prueba">
                         <div className={classes.transtationState}>
                           <div className="datos">
-                            <p>
-                              <b>
-                                {item.transaccion} {item.monto}
-                              </b>
-                            </p>
+                          <Typography  className={classes.title}>
+                          {item.transaccion} {item.monto}
+                           </Typography>
+                            
                           </div>
                           <div className="datos">
-                            <p>
-                              {item.estado} {item.fecha}
-                            </p>
+                          <Typography  className={classes.title}>
+                          {item.estado} {item.fecha}
+                           </Typography>
+                           
                           </div>
                         </div>
                         <div className="info">
-                          <IconButton >
+                          <IconButton>
                             <Tooltip />
                           </IconButton>
                         </div>
@@ -94,6 +91,7 @@ const Prueba = () => {
             ))}
           </Grid>
         </Grid>
+        </section>
       </div>
     </Fragment>
   );
