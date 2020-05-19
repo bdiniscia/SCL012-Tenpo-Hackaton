@@ -9,7 +9,7 @@ body {
   font-size: 14px;
 }
 
-.sectionMovements {
+.movementsSection {
   display: flex;
   flex-direction: column;
   width: 100%;

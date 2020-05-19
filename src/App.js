@@ -12,13 +12,13 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Requests from './Components/Requests'
+
 
 
 const App = () => {
   return (
     <Fragment>
-      <Requests />
+     
       <Router>
           <Switch>
             <Route exact path="/">

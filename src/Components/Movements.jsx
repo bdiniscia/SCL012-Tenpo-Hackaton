@@ -44,7 +44,7 @@ const Prueba = () => {
     <Fragment>
       <div className="movements">
         <Grid container>
-          <Grid item xs={12} sm={12} md={12} className="sectionMovements">
+          <Grid item xs={12} sm={12} md={12} className="movementsSection">
             <Box border={0} p={2} bgcolor="#F2F2F2">
               <Typography>
                 <h2>
