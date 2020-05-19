@@ -43,6 +43,7 @@ const Support = () => {
                     {transactions.map(transaction => {
                         return(
                             <Transaction
+                            key={transaction.id}
                             onClick={() => showInputView(transaction)}
                             date={transaction.date}
                             title={transaction.title}

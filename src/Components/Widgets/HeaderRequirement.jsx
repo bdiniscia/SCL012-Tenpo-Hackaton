@@ -4,7 +4,7 @@ import './HeaderRequirement.css'
 const HeaderRequirement = () => {
     return (
         <header className='headerSupport'>
-            <h1 className='titleRequierment'>Requerimiento</h1>
+            <h1 className='titleRequierment'>Solicitud</h1>
         </header>
     )
 }
