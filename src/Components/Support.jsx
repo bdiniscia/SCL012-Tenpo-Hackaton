@@ -1,6 +1,6 @@
 import React, {useState, Fragment} from 'react'
 import './Support.css'
-import HeaderRequirement from './Widgets/HeaderRequirement'
+import HeaderSections from './Widgets/HeaderSections'
 import transactions from '../transactions.json'
 import Transaction from './Widgets/Transaction'
 import InputRequirement from './Widgets/InputRequirement'
@@ -26,7 +26,7 @@ const Support = () => {
         <Fragment>
             <Topbar />
             <div className='support'>
-                <HeaderRequirement />
+                <HeaderSections title='Solicitud'/>
                 { showInput ?
                 <div className='contentSupport'>
                     <BackButton onClick={() => goBackToTransactions()}/>
@@ -35,7 +35,7 @@ const Support = () => {
                         <p className='chosenAmount'>{problematicTransac.amount}</p>
                         <p className='chosenDate'>{problematicTransac.date}</p>
                     </div>
-                    < InputRequirement />
+                    <InputRequirement problematicTransac={problematicTransac}/>
                 </div>
                 :
                 <div>
