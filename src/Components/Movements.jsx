@@ -5,20 +5,14 @@ import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
 import Typography from "@material-ui/core/Typography";
 import { firebase } from "../firebase";
 
-
 const useStyles = makeStyles((theme) => ({
-
-  transactionState: {
+  transtationState: {
     marginLeft: theme.spacing(2),
   },
-
 }));
-
-
 
 const Prueba = () => {
   const classes = useStyles();
-  
 
   const [movement, setMovement] = React.useState([]);
 
@@ -67,21 +61,18 @@ const Prueba = () => {
                   {
                     <div key={item.id}>
                       <div className="prueba">
-                        <div className={classes.transactionState}>
-                          
+                        <div className={classes.transtationState}>
                           <div className="datos">
-                          
-                          <p>
-                            <b>
-                              {item.transaccion} {item.monto}
-                            </b>
-                          </p>
+                            <p>
+                              <b>
+                                {item.transaccion} {item.monto}
+                              </b>
+                            </p>
                           </div>
                           <div className="datos">
-
-                          <p>
-                            {item.estado} {item.fecha}
-                          </p>
+                            <p>
+                              {item.estado} {item.fecha}
+                            </p>
                           </div>
                         </div>
                         <div className="info">
