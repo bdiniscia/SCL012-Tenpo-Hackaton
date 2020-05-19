@@ -27,6 +27,32 @@ const Home = () => {
                         <span className='textOptionMenu'>Historial</span>
                     </div>
                 </nav>
+                <section className='moreOptionsSection' >
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/01payment.svg')} alt='Pago de cuentas' />
+                        <span className='textOptionsMore'>Pago de cuentas</span>
+                    </div>
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/02recharge.png')} alt='Recargas' />
+                        <span className='textOptionsMore'>Recargas</span>
+                    </div>
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/03community.svg')} alt='Cobrar y pagar' />
+                        <span className='textOptionsMore'>Cobrar y pagar</span>
+                    </div>
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/04paypal.svg')} alt='Paypal' />
+                        <span className='textOptionsMore'>Paypal</span>
+                    </div>
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/05pocket.svg')} alt='Bolsillo' />
+                        <span className='textOptionsMore'>Bolsillo</span>
+                    </div>
+                    <div className='optionsMore'>
+                        <img className='iconOptionsMore' src={require('../img/06requirement.svg')} alt='Mis solicitudes' />
+                        <span className='textOptionsMore'>Mis solicitudes</span>
+                    </div>
+                </section>
             </div>
         </Fragment>
     )

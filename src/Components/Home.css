@@ -83,3 +83,31 @@
 .iconHistory {
     height: 2.5em;
 }
+
+.moreOptionsSection {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em 2em;
+    justify-content: space-between;
+}
+
+.optionsMore {
+    background-color: #fff;
+    display: flex;
+    width: 8.5em;
+    border-radius: 8px;
+    margin: 0.5em 0;
+    padding: 0.4em;
+    align-items: center;
+}
+
+.iconOptionsMore {
+    height: 2.5em;
+    margin-right: 0.4em;
+
+}
+
+.textOptionsMore {
+    color: #333;
+    font-size: 14px;
+}
