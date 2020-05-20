@@ -26,7 +26,7 @@ export default function AlertDialog() {
       >
         <DialogContent >
           <DialogContentText id="alert-dialog-description" >
-            Rcuerda que tu transacción demora 48 horas hábiles en hacerse
+            Recuerda que tu transacción demora 48 horas hábiles en hacerse
             efectiva. Te enviaremos una notificación cuando se realice.
           </DialogContentText>
         </DialogContent>
