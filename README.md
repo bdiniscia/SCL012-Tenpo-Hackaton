@@ -54,5 +54,6 @@ Utilizamos React para la estructura, Firebase para guardar la información, CSS3
 [https://www.loom.com/share/89458e4ab2694a0cb4a7838bc9424568](https://www.loom.com/share/89458e4ab2694a0cb4a7838bc9424568)
 
 ## Deploy del proyecto
-**Atención**: Este proyecto fue diseñado y programado solo para dimensiones de de celular, ya que está basado en una app mobile.
+**Atención**: Este proyecto fue diseñado y programado solo para dimensiones de celular, ya que está basado en una app mobile.
+
 Link del [deploy](https://scl012-tenpo-hackaton.firebaseapp.com/) 🚀
