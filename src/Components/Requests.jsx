@@ -46,7 +46,7 @@ const Requests = () => {
                       <span className='infoDetails'>{item.transac.amount}</span>
                     </Fragment>
                     :
-                    <span className='infoDetails'>Solicitud sin transferencia asociada</span>
+                    <span className='infoDetails'>Solicitud sin transacción asociada</span>
                     }
                     <span className='infoDetails infoDate'>{newDate}</span>
                   </div>
