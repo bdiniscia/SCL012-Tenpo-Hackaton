@@ -2,13 +2,8 @@ import React, { Fragment } from "react";
 import "./Movements.css";
 import { Box, Grid, IconButton, makeStyles } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-
-
-
 import { firebase } from "../firebase";
 import Tooltip from './Tooltip'
-
-
 
 const useStyles = makeStyles((theme) => ({
   transtationState: {
@@ -17,12 +12,8 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-
-
 const Prueba = () => {
   const classes = useStyles();
-  
-
   const [movement, setMovement] = React.useState([]);
 
   React.useEffect(() => {
@@ -45,12 +36,11 @@ const Prueba = () => {
   return (
     <Fragment>
       <div className="movements">
-      <header className="welcomeMovements">
-          <Typography variant="h5">Transsacciones descontadas</Typography>
+        <header className="welcomeMovements">
+          <Typography variant="h5">Transacciones descontadas</Typography>
         </header>
         <section>
         <Grid container>
-
           <Grid item xs={12} sm={12} md={12}>
             {movement.map((item) => (
               <Grid item xs={12} sm={12} md={12} className="categoryMovements">
@@ -72,10 +62,9 @@ const Prueba = () => {
                             
                           </div>
                           <div className="datos">
-                          <Typography  className={classes.title}>
-                          {item.estado} {item.fecha}
-                           </Typography>
-                           
+                            <Typography  className={classes.title}>
+                              {item.estado} {item.fecha}
+                            </Typography>
                           </div>
                         </div>
                         <div className="info">

@@ -28,7 +28,7 @@
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 11px;
   width: 112px;
 }
 
@@ -47,6 +47,7 @@
 
 .infoDate {
   font-size: 11px;
+  color: #ccc;
 }
 
 .iconStatus {
