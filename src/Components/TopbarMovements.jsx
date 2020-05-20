@@ -20,13 +20,8 @@ const NavbarMovements = () => {
         <BackArrow />
       </IconButton>
       <div className="title">
-<<<<<<< HEAD
-        <Typography variant="p">TU PLATA DISPONIBLE</Typography>
-        <Typography variant="p"><b>$ 100.000</b></Typography>
-=======
       <Typography variant="inherit">TU PLATA DISPONIBLE</Typography>
       <Typography variant="inherit"><b>$ 100.000</b></Typography>
->>>>>>> d35d1893e6a5832f22679a35b8e192f7017d4319
       </div>
       <SquareMenuMovements className="squareMenuMovements" />
     </div>
