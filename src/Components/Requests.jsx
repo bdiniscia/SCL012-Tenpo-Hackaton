@@ -12,7 +12,7 @@ const Requests = () => {
     const getRequests = async () => {
       try {
         const db = firebase.firestore();
-        const data = await db.collection("requirements").get();
+        const data = await db.collection("requirements").orderBy("fecha", "desc").get();
         const arrayData = data.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
@@ -33,8 +33,9 @@ const Requests = () => {
         <HeaderSections title='Mis solicitudes' />
         <section className='sectionRequests'>
             {request.map((item) => {
+              const newDate = new Date(item.fecha).toLocaleDateString()
               return(
-                <div className='divRequest'>
+                <div key={item.id} className='divRequest'>
                   <div className='infoRequest'>
                     <div className='noSolitudDiv infoDetails'>
                       <span className='noSolicitud'>Nº de solicitud: </span><span>{item.id.slice(0, 6)}</span>
@@ -47,7 +48,7 @@ const Requests = () => {
                     :
                     <span className='infoDetails'>Solicitud sin transferencia asociada</span>
                     }
-                    <span className='infoDetails infoDate'>{item.fecha}</span>
+                    <span className='infoDetails infoDate'>{newDate}</span>
                   </div>
                   <div className='statusRequest'>
                     { item.estado === 'Resuelto' ?

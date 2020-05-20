@@ -2,6 +2,7 @@ import React from "react";
 import { firebase } from "../../firebase";
 import "./InputRequirement.css";
 import Button from "./Button";
+import { useHistory } from "react-router-dom";
 
 const InputRequirement = ({problematicTransac}) => {
   const [requirements, setRequirement] = React.useState("");
@@ -12,6 +13,7 @@ const InputRequirement = ({problematicTransac}) => {
     }
   })
 
+  let history = useHistory();
   const sendMessage = async (e) => {
     e.preventDefault();
     console.log(requirements);
@@ -24,7 +26,7 @@ const InputRequirement = ({problematicTransac}) => {
       const db = firebase.firestore();
       const newRequirement = {
         message: requirements,
-        fecha: new Date().toLocaleDateString(),
+        fecha: Date.now(),
         transac: problematicTransac,
         estado: 'En proceso'
       };
@@ -32,6 +34,7 @@ const InputRequirement = ({problematicTransac}) => {
 
       setRequirement([...requirements, { ...newRequirement, id: data.id }]);
       setRequirement("");
+      history.push("/Requests");
     } catch (error) {
       console.log(error);
     }

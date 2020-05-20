@@ -16,7 +16,7 @@ const NavbarMovements = () => {
 
   return (
     <div className="topbarMovements">
-      <IconButton className={classes.backButon} color="#595959" href="/"> 
+      <IconButton className={classes.backButon} href="/"> 
         <BackArrow />
       </IconButton>
       <div className="title">
