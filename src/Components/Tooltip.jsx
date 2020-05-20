@@ -3,6 +3,7 @@ import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import ErrorOutlineIcon from "@material-ui/icons/ErrorOutline";
+import './Tooltip.css'
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -16,7 +17,7 @@ export default function AlertDialog() {
   };
 
   return (
-    <div >
+    <div>
       <ErrorOutlineIcon onClick={handleClickOpen}> </ErrorOutlineIcon>
       <Dialog
         open={open}
@@ -24,7 +25,7 @@ export default function AlertDialog() {
         aria-labelledby="alert-dialog-title"
         aria-describedby="alert-dialog-description"
       >
-        <DialogContent >
+        <DialogContent className='tooltipMovements' >
           <DialogContentText id="alert-dialog-description" >
             Recuerda que tu transacción demora 48 horas hábiles en hacerse
             efectiva. Te enviaremos una notificación cuando se realice.

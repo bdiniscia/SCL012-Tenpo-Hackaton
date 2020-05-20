@@ -5,10 +5,23 @@ import Typography from "@material-ui/core/Typography";
 import { firebase } from "../firebase";
 import Tooltip from './Tooltip'
 
+
 const useStyles = makeStyles((theme) => ({
   transtationState: {
     marginLeft: theme.spacing(2),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
   },
+  titless: {
+    fontFamily: "Montserrat",
+    fontWeight: "Bold",
+    fontSize: "15px"
+  },
+  title2: {
+    fontFamily: "Montserrat",
+    fontSize: "13px"
+  }
 
 }));
 
@@ -37,7 +50,7 @@ const Prueba = () => {
     <Fragment>
       <div className="movements">
         <header className="welcomeMovements">
-          <Typography variant="h5">Transacciones descontadas</Typography>
+          <h5 className='titleMovements'>Transacciones descontadas</h5>
         </header>
         <section>
         <Grid container>
@@ -56,13 +69,13 @@ const Prueba = () => {
                       <div className="prueba">
                         <div className={classes.transtationState}>
                           <div className="datos">
-                          <Typography  className={classes.title}>
+                          <Typography  className={classes.titless}>
                           {item.transaccion} {item.monto}
                            </Typography>
                             
                           </div>
                           <div className="datos">
-                            <Typography  className={classes.title}>
+                            <Typography  className={classes.title2}>
                               {item.estado} {item.fecha}
                             </Typography>
                           </div>
