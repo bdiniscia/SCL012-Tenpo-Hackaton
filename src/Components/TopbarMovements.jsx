@@ -23,8 +23,8 @@ const NavbarMovements = () => {
         <KeyboardBackspaceIcon />
       </IconButton>
       <div className="title">
-      <Typography variant="p">TU PLATA DISPONIBLE</Typography>
-      <Typography variant="p"><b>$ 100.000</b></Typography>
+      <Typography variant="inherit">TU PLATA DISPONIBLE</Typography>
+      <Typography variant="inherit"><b>$ 100.000</b></Typography>
       </div>
       <SquareMenuMovements className="squareMenuMovements" />
     </div>
